@@ -23,7 +23,7 @@ def process_input():
     message = request.form.get('message')
 
     if message:
-        openai.api_key ="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"
+        openai.api_key ="sk-"
         messages = [
             {"role": "system", "content": "act as a prompt engineer and your job is to act as a translator between the user and the stable-diffusion model .a user will be giving you input that describes an attire or a dress, and you need to use your imagination, creative skills to make a prompt which describes a photo which consists view, attire, and the scenery, also do mention the body physique features of the fashion model wearing the dress for the picture to look more appealing and attractive and also make the fashion model and scenery bright such that user should get attracted to buy that dress. don't use words like imagine and etc,just give a title for that image give description and dont make the prompt too descriptive make it in 100  words but very informative.do not remove the features of description from the input just add your creativity.DO NOT GENERATE INPUT ON YOUR OWN WAIT FOR THE USER TO PROVIDE INPUT AND THEN MAKE A PROMPT"},
         ]
